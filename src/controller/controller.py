@@ -3,4 +3,4 @@ class Controller():
         pass
 
     def run(self):
-        pass
+        print("Reversi is started!")
