@@ -1,4 +1,4 @@
-class Game():
+class Controller():
     def __init__(self):
         pass
 
