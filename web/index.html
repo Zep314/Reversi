@@ -1,23 +1,60 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="ru">
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>Reversi! ML - project</title>
         <link rel="stylesheet" href="css/reversi.css">
         <link rel="stylesheet" href="css/reset.css">
     </head>
 
     <body>
-    <div align="center" class="block1">
-    <div class="block2">
-        Игра Реверси
+    <center>
+    <div class="block1">
+    <table>
+        <tr>
+            <td>
+                <div class="block2">
+                    Игра Реверси
+                </div>
+                <div id="playground"></div>
+            </td>
+            <td class="t1">
+                <div id="verticalButtons">
+                    <button onclick="save()">Новая</button>
+                    <button onclick="discard()">Отмена</button>
+                </div>
+                <br>
+                <div class="block3">
+                    Первыми ходят:
+                </div>
+                <div class="block4">
+                    <input type='radio' id='radio1' name='fred' value='1' checked>
+                    <label for="radio1">Белые</label>
+                    <br>
+                    <input type='radio' id='radio2' name='fred' value='2'>
+                    <label for="radio2">Черные</label>
+                </div>
+                <br>
+                <div class="block3">
+                    Компьютер играет:
+                </div>
+                <div class="block4">
+                    <input type='radio' id='radioс1' name='fred1' value='3'>
+                    <label for='radioс1'>Белыми</label>
+                    <br>
+                    <input type='radio' id='radioс2' name='fred1' value='4' checked>
+                    <label for='radioс2'>Черными</label>
+                </div>
+            </td>
+        </tr>
+    </table>
+        <label class="t2" for='textarea1'>Журнал:</label>
+        <textarea id='textarea1' class='textarea1' rows="5">123
+        </textarea>
     </div>
-    <div id="playground"></div>
-    </div>
-
+    </center>
     </body>
         <script src="js/main.js"></script>
-
     <script>
         window.onload = function() {
             reversi.init('playground');

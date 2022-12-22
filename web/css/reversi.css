@@ -53,9 +53,74 @@
 }
 
 .block1 {
-    width: 600px;
+    width: 500px;
     background: #EEEEEE;
     padding: 50px;
     border: solid 1px black;
     align: center;
+}
+
+.block3 {
+    width: 100px;
+    background: #bbb;
+    padding: 5px;
+    border: solid 1px black;
+    text-align: center;
+    font-size: 14px;
+}
+
+.block4 {
+    width: 100px;
+    background: #bbb;
+    padding: 5px;
+    border: solid 1px black;
+    text-align: left;
+    font-size: 14px;
+}
+
+.textarea1 {
+    width: 490px;
+    rows: 5;
+    owerflow: auto;
+//    padding: 10px;
+}
+
+label.t2 {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+#verticalButtons{
+    display: flex;
+    flex-direction: column;
+//    float: right;
+}
+
+.button{
+    border: 1;
+    border-radius: 5px;
+    padding: 5px 5px 7px 5px;
+    margin: 2px;
+    cursor: pointer;
+    background: #FFFFFF
+}
+
+.button:hover{
+    background: blue;
+}
+
+table.t1 {
+    background-color: red;
+    align: center;
+    cellspacing: 100px;
+}
+
+td.t1 {
+    vertical-align: middle;
+    align: center;
+    width: 100px;
+    padding: 50px;
 }

@@ -175,4 +175,5 @@ var reversi = {
     isVisible: function(state) {
         return (state.id === this.states.white.id || state.id === this.states.black.id);
     },
+// document.getElementById('buttonX').checked = true;
 }
