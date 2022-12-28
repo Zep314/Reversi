@@ -176,4 +176,33 @@ var reversi = {
         return (state.id === this.states.white.id || state.id === this.states.black.id);
     },
 // document.getElementById('buttonX').checked = true;
+
+}
+
+function new1() {
+    const textarea = document.getElementById('textarea1');
+
+    // ✅ Append text
+    //textarea.value += 'Appended text';
+
+    const btn = document.getElementById('new1');
+
+    // ✅ Append text on button click
+    btn.addEventListener('click', function handleClick() {
+                textarea.value += 'Appended text';
+                });
+}
+
+function cancel() {
+    const textarea = document.getElementById('textarea1');
+
+    // ✅ Append text
+     textarea.value = '';
+
+    const btn = document.getElementById('new1');
+
+    // ✅ Append text on button click
+    btn.addEventListener('click', function handleClick() {
+                textarea.value = '';
+                });
 }
